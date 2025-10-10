@@ -71,9 +71,7 @@ MainMenu:
 	db "MYSTERY GIFT@"
 	db "MOBILE@"
 	db "MOBILE STUDIUM@"
-if DEF(_DEBUG)
-	db "DEBUG ROOM@"
-endc
+	db "COLOR PICKER@"
 
 .Jumptable:
 ; entries correspond to MAINMENUITEM_* constants
@@ -83,27 +81,24 @@ endc
 	dw MainMenu_MysteryGift
 	dw MainMenu_Mobile
 	dw MainMenu_MobileStudium
-if DEF(_DEBUG)
 	dw MainMenu_DebugRoom
-endc
 
 MainMenuItems:
 ; entries correspond to MAINMENU_* constants
 
 	; MAINMENU_NEW_GAME
-	db 2
+	db 3
 	db MAINMENUITEM_NEW_GAME
 	db MAINMENUITEM_OPTION
+	db MAINMENUITEM_DEBUG_ROOM
 	db -1
 
 	; MAINMENU_CONTINUE
-	db 3 + DEF(_DEBUG)
+	db 4
 	db MAINMENUITEM_CONTINUE
 	db MAINMENUITEM_NEW_GAME
 	db MAINMENUITEM_OPTION
-if DEF(_DEBUG)
 	db MAINMENUITEM_DEBUG_ROOM
-endc
 	db -1
 
 	; MAINMENU_MOBILE_MYSTERY
