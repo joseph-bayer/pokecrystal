@@ -1058,9 +1058,9 @@ DebugColor_PlaceCursor:
 	ret
 
 DebugColor_AreYouFinishedString:
-	db   "Done?"                        ; Are you finished?
-	next "Y<DOT><DOT><DOT>", DEBUGTEST_A ; YES...(A)
-	next "N<DOT><DOT><DOT>", DEBUGTEST_B ; NO..(B)
+	db   "Done?"				; Are you finished?
+	next "Y<DOT><DOT><DOT>", DEBUGTEST_A	; YES...(A)
+	next "N<DOT><DOT><DOT>", DEBUGTEST_B	; NO..(B)
 	db   "@"
 
 DebugColor_UpArrowGFX:
