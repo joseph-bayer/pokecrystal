@@ -841,6 +841,14 @@ Function4a6d8:
 	jr nz, Function4a6d8
 	ret
 
-MainMenu_DebugRoom:
+MainMenu_MonColorPicker:
+	ld a, 0
+	ld [wDebugColorIsTrainer], a
+	farcall DebugColorPicker
+	ret
+
+MainMenu_TrainerColorPicker:
+	ld a, 1
+	ld [wDebugColorIsTrainer], a
 	farcall DebugColorPicker
 	ret

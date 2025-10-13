@@ -1,6 +1,6 @@
 # Debug Color Picker & TM/HM Compatibility Checker
 
-This is a modified version of Pokecrystal that makes the debug Color Picker & TM/HM Compatibility checker available from the start menu.
+This is a modified version of Pokecrystal that makes the debug Color Picker & TM/HM Compatibility checker available from the start menu. The first option is the Mon color picker and the second option is the Trainer color picker.
 
 The UI has been localized into English.
 

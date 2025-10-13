@@ -32,7 +32,7 @@
 	const DEBUGCOLORMAIN_INITTMHM       ; 4
 	const DEBUGCOLORMAIN_TMHMJOYPAD     ; 5
 
-DebugColorPicker: ; unreferenced
+DebugColorPicker:
 ; A debug menu to test monster and trainer palettes at runtime.
 	ldh a, [hCGB]
 	and a
