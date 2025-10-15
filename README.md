@@ -6,7 +6,7 @@ The UI has been localized into English.
 
 This tool was left unreferenced in the rom, but was used during development.
 
-The hexadecimal codes displayed in the UI can be converted into RGB555 values compatible using this tool: https://joseph-bayer.github.io/2byte-hex-to-gbc-rgb.github.io/
+The hexadecimal codes displayed in the UI can be converted into RGB555 values compatible with `.pal` files using this tool: https://joseph-bayer.github.io/2byte-hex-to-gbc-rgb.github.io/
 
 Bugs:
 - Move names display "F" instead of a space character
